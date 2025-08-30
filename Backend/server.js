@@ -11,7 +11,9 @@ const app = express();
 
 //middleware
 app.use(cors(
-   { origin: "portfolio-quyyog7l8-iqras-projects-c95e893d.vercel.app"}
+   { origin: "https://portfolio-quyyog7l8-iqras-projects-c95e893d.vercel.app",
+      credentials: true
+   }
 ));
 app.use(express.json());
 
