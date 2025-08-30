@@ -13,27 +13,27 @@ const app = express();
 app.use(cors({
    origin: [
       "http://localhost:3000",
-      "https://portfolio-tawny-two-21.vercel.app/"
+      "https://portfolio-tawny-two-21.vercel.app"
    ],
    credentials: true
 }));
 app.use(express.json());
 
+app.options("*", cors({
+  origin: "https://portfolio-tawny-two-21.vercel.app",
+  credentials: true
+}));
 // routes
 app.use("/api/v1/portfolio", require("./routes/routes"));
 
-// static files
-app.use(express.static(path.join(__dirname, "./client/build")));
+
 
 // test route
 app.get("/", (req, res) => {
    res.send("run correct");
 });
 
-// react fallback
-app.get("*", (req, res) => {
-   res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
-});
+
 
 const PORT = process.env.PORT || 3000;
 
