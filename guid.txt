@@ -1,0 +1,18 @@
+first creat react app (npx create-react-app name)
+install some extentions
+1.material icon theme
+2.prettier code format
+3. html to jsx
+4. auto import ...>for suggestion of import
+React uses JavaScript to create interactive web apps....<<
+Bootstrap ko add krny ky liy index.html mn hum usy install bi kr skty hn or us ka "CDN" link copy kr ky indix.html mn tilte sy phly paste bi kr skty hn .isi trah JS ka bi link copy paste kr skty hn..(Bootsrap.com)
+npm install react-icons..> for install icons
+to configure node server run pkj in root directry npm init
+after this install dependencies
+npm i express cors dotenv (pkjg)
+sendgrid--> for snd email
+npm i nodemailer-->for email
+npm i nodemailer-sendgrid-transport
+npm i react-toastify-->to notify error or success in pop up
+npm i axios--to deal with api
+npm run build--->buld react app for deploy it(upload on github)
