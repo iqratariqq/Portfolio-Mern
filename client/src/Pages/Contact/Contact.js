@@ -6,6 +6,8 @@ import { FaGithub } from "react-icons/fa";
 import { Zoom } from "react-awesome-reveal";
 import { toast } from "react-toastify";
 import { CiLinkedin } from "react-icons/ci";
+import api from "../../libs/axious";
+
 
 
 const Contact = () => {
@@ -20,8 +22,8 @@ const Contact = () => {
         toast.error("Provide all fields", {
           className: "my-toast",
         });
-      const res = await axios.post(
-        `https://backend-mern-beta.vercel.app/api/v1/portfolio/sendEmail`,
+      const res = await api.post(
+        `/api/v1/portfolio/sendEmail`,
         { name, email, message }
       );
 
