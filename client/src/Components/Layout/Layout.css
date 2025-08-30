@@ -1,0 +1,110 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.Layout {
+  display: flex; /* Make sidebar and content side by side */
+  height: 100vh;
+}
+
+
+.sidebar {
+  width: 12vw;
+  background-color: #1b1919;
+  /* color: rgb(10, 255, 255); */
+  height: 100vh;
+  position: fixed;
+}
+
+.content-section {
+  flex: 1; /* Take remaining space */
+  padding: 4dvh;
+  background-color: #171212;
+  color: rgb(10, 255, 255);
+  color: white;
+  margin-left:12vw ;
+
+}
+
+.content h2 {
+  font-size: 3rem;
+  margin-bottom: 0.7vh;
+  margin-top:23vh ;
+
+}
+.highlight-name{
+  color: rgb(10, 255, 255);
+  font-weight: bold;
+   font-size: 3rem;
+    text-shadow: 2px 2px 0 #000, 
+               4px 4px 0 #444,
+               6px 6px 0 #888;
+}
+
+.content h1{
+margin-left: 5vw;
+ font-size: 1.5rem;
+}
+
+.logo img{
+  width: 12vw;
+  height: auto;
+}
+.content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 2vh;
+  margin-top: 2dvh;
+  margin-left: 18vw;
+  color: gray;
+}
+.highlight-skill{
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+
+.logo-top{
+  display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .content-section {
+    margin-left: 0vw; /* no sidebar on small screens */
+    margin-right: 0vw;
+    width: 100%;
+
+  }
+
+
+  .highlight-skill{
+ 
+  font-size: 1rem;
+
+}
+.content h2 {
+  font-size: 1.5rem;
+
+}
+
+.content p {
+  font-size: 0.5rem;
+  margin-left: 15vw;
+}
+
+  .sidebar{
+    display: none;
+  }
+  .content h2 {
+  margin-top:23vh ;
+}
+
+}
+

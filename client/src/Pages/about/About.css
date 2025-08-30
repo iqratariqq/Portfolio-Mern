@@ -1,0 +1,48 @@
+.about-container {
+  margin-left: 12vw;
+  background-color: #171212;
+  padding: 5dvh;
+  color: rgb(189, 183, 183);
+}
+
+.about-container .P-title h1{
+  text-align: center;
+    
+}
+
+
+/* Timeline vertical stack */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  margin-top: 4vh;
+}
+
+
+
+
+/* Content area */
+.about-content h4 {
+  margin-bottom: 1vh;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-content.objective {
+  background-color: #1a1717;
+  border-radius: 2vh;
+  box-shadow: 4px 4px 8px rgba(47, 44, 44, 0.2);
+  padding: 2vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    margin-left: 0vw;
+  }
+
+}

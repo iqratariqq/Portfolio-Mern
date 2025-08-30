@@ -1,0 +1,63 @@
+.progress-bar {
+  background-color: inherit;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  width: 5.2vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.circle-wrapper {
+  transform: rotateY(180deg); /* Only flip the circle */
+  width: 100%;
+  height: 100%;
+}
+/* This puts the text perfectly in the center of the circle */
+.progress-text {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media (max-width: 786px) {
+  .progress-bar {
+    display: flex;
+    width: 8.5vw; /* increased from 7vw */
+    height: 8vh; /* adjust height as needed */
+    min-width: 60px; /* prevent too small */
+    min-height: 60px;
+  }
+
+  .progress-text {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .progress-bar {
+    display: flex;
+    width: 10vw; /* increased from 7vw */
+    height: 10vh; /* adjust height as needed */
+    min-width: 60px; /* prevent too small */
+    min-height: 60px;
+    margin-bottom: 0vh;
+  }
+
+  .progress-text {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}

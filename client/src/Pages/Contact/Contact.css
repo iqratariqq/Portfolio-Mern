@@ -1,0 +1,319 @@
+.Contact-section {
+  margin-left: 12vw;
+  background-color: #171212;
+  padding: 5vh;
+  color: rgba(189, 183, 183, 0.888);
+  flex-direction: column;
+  height: 100dvh;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 217, 255);
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  font-family: cursive;
+  font-size: 3rem;
+}
+.contact.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #171212;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* margin: 5vh 0;  */
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+}
+
+.or-text {
+  white-space: nowrap;
+  color: #999;
+  font-weight: 500;
+  padding: 0 2vh; /* space around OR using vh */
+  font-size: 1rem; /* responsive font size */
+}
+
+.contact-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  padding-left: 2vw;
+}
+
+.card0 {
+  height: auto;
+  width: 65vw;
+  box-shadow: 0vh 0.3vh 0.3vh 0.7vh rgb(0, 217, 255);
+}
+
+.row.justify-content-center.align-items-center.text-center.pt-2.heading h6 {
+  font-size: 1rem;
+}
+.card1 {
+  width: 28vw;
+}
+
+.line {
+  flex: 1;
+  display: inline;
+  height: 0.2vh;
+  background-color: #999;
+  /* margin: 0 1vh; */
+}
+
+.card2.d-flex.card.border-0.px-0.mr-3.ml-0 {
+  width: 28vw;
+  height: 46vh;
+  margin-left: 0.5vw;
+  margin-top: 2vh;
+  font-size: 1.1rem;
+  background-color: rgba(10, 8, 8, 0.888);
+}
+
+.d-flex.align-items-center.or-divider.w-100 {
+  margin-top: 4vh;
+}
+
+/* .row.px-3 > .mb-3 {
+  margin-right: 3rem !important;
+} */
+
+.row.justify-content-center.align-items-center.text-center.pt-2 h6 {
+  color: #999;
+}
+
+.border-line {
+  border-right: 0.3vh solid rgb(19, 16, 16);
+}
+
+::placeholder {
+  padding: 0.5vh;
+  color: rgb(90, 101, 113);
+  /* margin: 7vh; */
+}
+
+input,
+textarea {
+  background-color: rgb(21, 20, 20);
+  color: rgb(143, 146, 150);
+  border: none;
+  border-radius: 0.5vh;
+  padding: 1vh;
+  width: 90%;
+  font-size: 1rem;
+  margin-bottom: 1.5vh;
+}
+
+.btn.button {
+  margin-top: 0.4vh !important; 
+  cursor: pointer;
+  background-color: inherit;
+  color: rgb(143, 146, 150);
+  border: 0.1vh solid whitesmoke;
+  height: 5vh;
+  width: 11vw;
+  text-align: center;
+   
+}
+.btn.button:hover {
+  background-color: rgb(0, 217, 255);
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-link {
+  display: flex;
+  height: 3.5vh;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  /* margin-top: 0.6vh; */
+  background-color: rgb(21, 20, 20);
+  width: 25vw;
+}
+.contact-social-link {
+  display: flex;
+  gap: 2vh;
+}
+.contact-social-link a {
+  text-decoration: none;
+  color: rgb(90, 101, 113); /* keeps icon/text color consistent */
+  transition: transform 0.2s ease;
+}
+
+/* Contact.css or Toast.css */
+.my-toast {
+  background: #000;  /* Use your theme color here */
+  color: #fff;       /* Text color */
+}
+
+.my-toast .Toastify__progress-bar {
+  background: #fff; /* Progress bar color if you want */
+}
+
+
+/* ======================
+   CONTACT SECTION RESPONSIVE STACKING
+   ====================== */
+
+@media (max-width: 1024px) {
+  .card0 {
+    width: 53vw !important; /* Let card0 take full width of its parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1 {
+    /* width: 51vw !important;     
+  height: 49vh !important;
+  display: table-footer-group */
+    display: none;
+  }
+
+  .card2 {
+    width: 53vw !important;
+    height: 49vh !important;
+    margin-top: 0vh !important;
+
+    background-image: url("../../assests/images/Contact.png");
+        background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-img {
+    width: auto !important;
+    height: auto !important;
+    margin-top: 0vh;
+  }
+
+  .card1 .border-line {
+    border-right: none;
+    border-bottom: 0.3vh solid rgb(19, 16, 16);
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+  }
+
+  .row.justify-content-center.align-items-center.text-center.pt-2.heading h6 {
+    font-size: 1.5rem;
+    padding: 1vh;
+  }
+  .contact-link {
+    display: flex;
+    height: 3.5vh;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7vw;
+    background-color: inherit;
+    width: 40vw;
+    border-block: 2px solid #2784975c;
+  }
+
+  input, textarea {
+    background-color: rgb(71 62 62 / 33%) !important;
+    color: #f3e8d8 !important;
+    border-radius: 0.5vh;
+    padding: 1vh;
+    width: 90%;
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5vh;
+    border-block: 2px solid #2784975c !important;
+}
+
+::placeholder {
+  padding: 0.5vh;
+  color: #ceccc9 !important;
+  
+}
+
+.btn.button {
+  margin-top: 2vh !important;
+}
+
+}
+
+@media (max-width:786px)
+{
+.Contact-section {
+  margin-left: 0vw !important;
+
+}
+
+.card0 {
+  height: 56vh !important;
+  width: 56vw !important;
+
+}
+
+ .card2 {
+    width: 55vw !important;
+    height: 56vh !important;
+    margin-top: 0vh !important;
+
+    background-image: url("../../assests/images/Contact.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+  }
+
+.btn.button {
+
+  height: 6vh !important;
+  width: 20vw !important;
+  font-size: 0.7rem !important;
+  margin-bottom: 1vh;
+
+}
+
+ .row.justify-content-center.align-items-center.text-center.pt-2.heading h6 {
+    font-size: 1rem;
+
+  }
+
+    input, textarea {
+  
+    font-size: 1rem !important;
+
+}
+
+}
+
+@media (max-width:378px)
+{
+  
+.card0 {
+  height: 57.5vh !important;
+  width: 56vw !important;
+
+}
+
+ .card2 {
+    width: 55vw !important;
+    height: 57.5vh !important;
+    margin-top: 0vh !important;
+
+    background-image: url("../../assests/images/Contact.png");
+  
+  }
+
+      input, textarea {
+  
+    font-size: 0.5rem !important;
+
+}
+
+
+}
