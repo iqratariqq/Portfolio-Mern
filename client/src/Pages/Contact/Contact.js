@@ -6,8 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { Zoom } from "react-awesome-reveal";
 import { toast } from "react-toastify";
 import { CiLinkedin } from "react-icons/ci";
-import dotenv from 'dotenv'
-dotenv.config();
+
 
 const Contact = () => {
   const [name, setname] = useState("");
@@ -22,7 +21,7 @@ const Contact = () => {
           className: "my-toast",
         });
       const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/v1/portfolio/sendEmail`,
+        `backend-mern-beta.vercel.app/api/v1/portfolio/sendEmail`,
         { name, email, message }
       );
 
