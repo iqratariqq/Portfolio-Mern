@@ -6,6 +6,8 @@ import { FaGithub } from "react-icons/fa";
 import { Zoom } from "react-awesome-reveal";
 import { toast } from "react-toastify";
 import { CiLinkedin } from "react-icons/ci";
+import dotenv from 'dotenv'
+dotenv.config();
 
 const Contact = () => {
   const [name, setname] = useState("");
@@ -19,17 +21,17 @@ const Contact = () => {
         toast.error("Provide all fields", {
           className: "my-toast",
         });
-       const res = await axios.post("https://backend-mern-m8l4z30uh-iqras-projects-c95e893d.vercel.app/api/v1/portfolio/sendEmail", {
-        name,
-        email,
-        message,
-      });
+      const res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/api/v1/portfolio/sendEmail`,
+        { name, email, message }
+      );
+
       //validation
       if (res.data.success) {
         toast.success(res.data.message);
         setname("");
-        setemail("")
-        setmessage("")
+        setemail("");
+        setmessage("");
       } else {
         toast.success(res.data.message);
       }
