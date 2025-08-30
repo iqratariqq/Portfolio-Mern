@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({
    origin: [
       "http://localhost:3000",
-      "https://portfolio-quyyog7l8-iqras-projects-c95e893d.vercel.app"
+      "https://portfolio-tawny-two-21.vercel.app/"
    ],
    credentials: true
 }));
