@@ -9,9 +9,12 @@ dotenv.config();
 // res object
 const app = express();
 
-// middleware
-app.use(cors());
-app.options("*", cors());
+app.use(cors({
+  origin: "https://portfolio-tawny-two-21.vercel.app", //  frontend URL,in your case put your localhost 
+
+  credentials: true
+}));
+
 app.use(express.json());
 
 // routes
