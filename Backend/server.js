@@ -11,7 +11,7 @@ const app = express();
 
 //middleware
 app.use(cors(
-   { origin: "http://localhost:3000"}
+   { origin: "portfolio-quyyog7l8-iqras-projects-c95e893d.vercel.app"}
 ));
 app.use(express.json());
 
