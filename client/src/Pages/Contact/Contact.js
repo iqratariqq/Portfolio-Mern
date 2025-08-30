@@ -21,7 +21,7 @@ const Contact = () => {
           className: "my-toast",
         });
       const res = await axios.post(
-        `backend-mern-beta.vercel.app/api/v1/portfolio/sendEmail`,
+        `https://backend-mern-beta.vercel.app//api/v1/portfolio/sendEmail`,
         { name, email, message }
       );
 
