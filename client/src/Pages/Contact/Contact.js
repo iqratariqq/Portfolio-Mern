@@ -19,7 +19,7 @@ const Contact = () => {
         toast.error("Provide all fields", {
           className: "my-toast",
         });
-      const res = await axios.post("http://localhost:5000/api/v1/portfolio/sendEmail", {
+      const res = await axios.post("backend-mern-m8l4z30uh-iqras-projects-c95e893d.vercel.app/api/v1/portfolio/sendEmail", {
         name,
         email,
         message,
